@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+.logo {
+    margin-left: 900px;
+}
+
+/* Inicio del Navbar */
+#navbar{
+    background: #1cb36d;
+    padding-left: 600px;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo img{
+    width: 150px; /* El logo tendrá un ancho de 100 píxeles */
+    /* O también puedes utilizar height */
+    height: 150px;
+}
+
+
+.navbar-toggler span{
+    color: #F22E62;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background:#F22E62 ;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+.contenido{
+    background-color: #E8F2D0;
+}
+/* Final de navbar*/
+
+/* Inicio de la sección de inicio */
+.inicio{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/chichenitza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inicio .contenedor{
+    text-align: center;
+    padding-top: 200px;
+}
+.inicio .contenedor h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.inicio .contenedor h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #04ADBF;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0% {content: "Japón";}
+    20% {content: "China";}
+    40% {content: "Australia";}
+    60% {content: "California";}
+    80% {content: "Cancún";}
+    100%{content: "Francia";}
+
+} 
+.inicio .contenedor p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.inicio .contenedor a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.inicio .contenedor a:hover{
+    background: #F22E62;
+    color: white;
+}
+@media (max-width:850px){
+    .inicio{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .inicio .contenedor h5{
+        font-size: 25px;
+    }
+    .inicio .contenedor h1{
+        font-size: 38px;
+    }
+    .inicio .contenedor p{
+        font-size: 13px;
+    }
+}
+/* Final de la sección de inicio */
+
+
+/*inicio de la sección del menu izquierdo*/
+
+.publicidad {
+    padding-left: 30px;
+}
+.publicidad-1{
+    color: white;
+    background-color: rgb(99, 204, 155);
+    padding-bottom: 200px;
+    margin-right: 1500px;
+    margin-bottom: 90px;
+    border-radius: 20px;
+
+}
+.publicidad h3{
+    padding-left: 30px;
+}
+.publicidad img{
+    padding-left: 30px;
+}
+.publicidad-1 p {
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Final de la sección del menu izquierdo*/
+
+/* Inicio de la sección de lugares por ver */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #F22E62;
+}
+.lugares .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.699) 0px 4px 12px;
+    background-color: #7CA692;
+}
+.lugares .card img{
+    border-radius: 5px;
+    width: 400px;
+    height: 250px;
+}
+.lugares .card .card-body{
+    background: transparent;
+}
+.lugares .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.lugares .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffb01f;
+}
+.estrella i{
+    font-size: 15px;
+}
+.lugares .card .card-body h6{
+    font-size: 20px;
+}
+.lugares .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #BF7154;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+/* Final de la sección de lugares por visitar */
+
+
+
+
+/* Inicio de la sección de servicios */
+.servicios{
+    margin-top: 50px;
+}
+.servicios .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #D9B504;
+}
+.servicios .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #380303;
+    margin-top: 10px;
+}
+.servicios .card .card-body h3{
+    font-weight: 600;
+}
+.servicios .card .card-body{
+    text-align: center;
+}
+/* Final de la sección de servicios */
+
+
+
+
+
+/* Inicio de la sección cosas por ver */
+#cosas{
+    margin-top: 50px;
+}
+#cosas .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+#cosas .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#cosas .card img:hover{
+    transform: scale(1.1);
+}
+/* Final de la sección cosas por ver*/
+
+
+
+
+/* Inicio del Acerda de */
+.acercade{
+    padding: 50px;
+    margin-top: 50px;
+    background: #E8F2D0;
+}
+.acercade .card{
+    border-radius: 10px;
+}
+.acercade .card img{
+    border-radius: 10px;
+}
+.acercade h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.acercade p{
+    font-weight: 500;
+}
+#acercade-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #F22E62;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#acercade-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .acercade{
+        padding: 0;
+    }
+}
+/* Final del Acerca de */
+
+
+
+
+/* Inicio del Footer */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #E8F2D0;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 img{
+    width: 150px; /* El logo tendrá un ancho de 100 píxeles */
+    /* O también puedes utilizar height */
+    height: 150px;
+    
+}
+
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #59190B;
+}
+/* Final del Footer */
+
